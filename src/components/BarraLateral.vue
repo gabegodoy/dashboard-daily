@@ -45,6 +45,11 @@ img{
 }
 .panel li{
     margin: 8px 0;
+    margin-left: 1rem;
+}
+
+li i{
+    margin-right: .5rem;
 }
 .link{
     color: #fff;
