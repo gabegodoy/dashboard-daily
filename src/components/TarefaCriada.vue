@@ -1,7 +1,11 @@
  <template>
   <BoxForm>
       <div class="columns">
-        <div class="column is-7">{{ tarefa.descricao || 'Und3f!neD'}}</div>
+        <div class="column is-4">{{ tarefa.descricao || 'Und3f!neD'}}</div>
+        <div class="column is-3">
+          {{ tarefa.projeto?.nome || 'xD' }}
+        </div>
+
         <div class="column">
           <CronometroForm :tempoEmSegundos="tarefa.duracaoEmSegundos" />
         </div>
