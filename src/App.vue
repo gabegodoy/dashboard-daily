@@ -4,6 +4,7 @@
       <BarraLateral></BarraLateral>
     </div>
     <div class="column is-three-quarter conteudo">
+      <NotificacoesGeral></NotificacoesGeral>
       <!-- ROUTE -->
       <router-view></router-view>
     </div>
@@ -14,11 +15,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import BarraLateral from "./components/BarraLateral.vue";
+import NotificacoesGeral from "./components/Notificacoes.vue"
 
 export default defineComponent({
   name: "App",
   components: {
-    BarraLateral
+    BarraLateral,
+    NotificacoesGeral
   },
 });
 </script>
